@@ -46,7 +46,7 @@ $files = array_filter($files, function($v) use ($dirpath) {
   if (strpos($mime, 'image/') !== 0) {
     return false;
   }
-  if (preg_match('/\d+-\d+\.png$/', $v)) {
+  if (preg_match('/\d+\D*?-\d+\.png$/', $v)) {
     return false;
   }
 
